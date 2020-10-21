@@ -10,11 +10,10 @@ namespace FreeImagePipline
     {
         public override TImport Import(string filename, ContentImporterContext context)
         {
-            FIBITMAP image = new FIBITMAP();
 
-            image = FreeImage.Allocate(100, 100, 24);   //If you comment out this line and rebulid everything will work fine.
-
-            return new FreeImageEditedFile(image);
+            FIBITMAP image = FreeImage.Allocate(100, 100, 24);   //If you comment out this line and rebulid everything will work "fine".
+            
+            return new FreeImageEditedFile(null);
         }
     }
 }

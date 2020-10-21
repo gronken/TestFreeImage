@@ -25,7 +25,7 @@ namespace TestFreeImage.OpenGL
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            FreeImageEditedFile file = Content.Load<FreeImageEditedFile>("file");
+            //FreeImageEditedFile file = Content.Load<FreeImageEditedFile>("file");
 
         }
 
